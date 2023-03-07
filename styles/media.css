@@ -1,4 +1,23 @@
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 560px){
+    aside h2{
+        line-height: 48px;
+        text-align: left;
+        margin-block: 25px;
+    }
+
+    p{
+        width: 90%;
+        margin: 0 auto;
+        text-align: justify;
+        padding-block: 15px;
+    }
+
+    img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 912px) {
     
     header{
         flex-direction: column;
@@ -6,10 +25,7 @@
 
     main{
         flex-direction: column;
-    }
-
-    h2{
-        font-size: 38px;
+        align-items: center;
     }
 
     form{
@@ -22,10 +38,50 @@
     }
 
     img{
-        display: none;
+        padding-block: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    main{
+        padding: 10px;
     }
 
-    ul{
-        text-align: center;
+    main h2{
+        line-height: 40px;
+        margin: 18px;
+    }
+
+    form{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    img{
+        padding-block: 40px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    main{
+        justify-content: space-between;
+    }
+
+    aside{
+        align-items: center;
+        margin: auto;
+    }
+
+    form{
+        align-items: center;
+    }
+
+    input{
+        width: 80%;
     }
 }
