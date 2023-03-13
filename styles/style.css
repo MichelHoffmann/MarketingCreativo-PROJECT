@@ -84,32 +84,6 @@ main aside p{
     font-family: poppinslight;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-}
-
-form [type="submit"]{
-    height: 50px;
-    width: 50%;
-    background-color: rgb(132, 14, 201);
-    color: white;
-    font-weight: bold;
-}
-
-form [type="submit"]:hover{
-    cursor: pointer;
-}
-
-input{
-    margin-top: 20px;
-    height: 20px;
-    padding: 15px;
-    border-radius: 20px;
-    border: none;
-    font-size: 15px;
-}
-
 /*ARTICLE*/
 main article{
     display: flex;
@@ -119,4 +93,50 @@ main article{
 main article img{
     width: 400px;
     height: auto;
+}
+
+/* FORM */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: poppinslight;
+}
+
+form input::placeholder {
+    color: rgb(132, 14, 201);
+}
+
+form input:focus::placeholder {
+    opacity: 0;
+}
+
+input:focus {
+    border: 3px solid rgb(132, 14, 201);
+  }
+
+form input{
+    width: 80%;
+    max-width: 450px;
+    height: 35px;
+    margin-top: 17px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+form [type="submit"]{
+    height: 40px;
+    max-width: 200px;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(93, 14, 138);
+    transition: 250ms;
 }
